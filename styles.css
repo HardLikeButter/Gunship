@@ -9,8 +9,12 @@
   --fw-med: 500;
   --fw-bold: 700;
 
-/* ///////////////////////////////////////// */
 }
+/* ///////////////////////////////////////// */
+
+
+
+
 /* ------- */
 /* Imports */
 /* ------- */
@@ -26,7 +30,11 @@
   font-style: normal;
 }
 
+
+
+
 /* /////////////////////////////////////////// */
+
 
 
 /* --------------- */
@@ -67,6 +75,36 @@ body {
   color: #270245;
   font-size: 2.5em;
 } 
+
+
+.btn {
+  text-align: center;
+  vertical-align: middle;
+  padding: .67em;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+
+.btn-primary {
+  color: white;
+  background-color: #56CCF2;
+  border: none;
+  border-radius: .3em;
+  font-weight: bold;
+  box-shadow: 0.25em 0.25em 0.70em rgba(0, 0, 0, 0.25),
+  0.125em 0.125em 0.20em rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary:hover {
+  background-color: #216880;
+}
+
+.btn-primary:active {
+  transition: .3s;
+  transform: scale(1.1);
+}
+
 
 
 /* ////////////////////////////////////////////// */
@@ -132,6 +170,43 @@ body {
   color: #FE18D3;
 }
 
+.btn-header {
+  margin: .5em 15% 2em 15%;
+  color: white;
+  border: 2px solid #2D9CD8;
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 0;
+  font-size: 1.5em;
+  font-weight: lighter;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.btn-header:hover {
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play {
+  display: block;
+  margin: 0 auto;
+  color: #FE18D3;
+  font-size: 4em;
+  border-radius: 50%;
+  padding: 0;
+  width: 100px;
+  height: 100px;
+  transition: .3s ease;
+}
+
+.btn-play:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+}
+
+
+
+
 /* ///////////////////////////////////////////////////// */
 
 
@@ -168,75 +243,7 @@ body {
 
 
 
-.footer-link {
-  transition: .35s ease;
-}
-.footer-link:hover {
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-}
 
-.btn {
-  text-align: center;
-  vertical-align: middle;
-  padding: .67em;
-  cursor: pointer;
-  transition: 0.6s;
-}
-
-.btn-header {
-  margin: .5em 15% 2em 15%;
-  color: white;
-  border: 2px solid #2D9CD8;
-  background-color: rgba(255, 255, 255, .1);
-  border-radius: 0;
-  font-size: 1.5em;
-  font-weight: lighter;
-  padding-left: 2em;
-  padding-right: 2em;
-}
-
-.btn-header:hover {
-  background-color: rgba(255, 255, 255, .3);
-}
-
-.btn-play {
-  display: block;
-  margin: 0 auto;
-  color: #FE18D3;
-  font-size: 4em;
-  border-radius: 50%;
-  padding: 0;
-  width: 100px;
-  height: 100px;
-  transition: .3s ease;
-}
-
-.btn-play:hover {
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-}
-
-.btn-primary {
-  color: white;
-  background-color: #56CCF2;
-  border: none;
-  border-radius: .3em;
-  font-weight: bold;
-  box-shadow: 0.25em 0.25em 0.70em rgba(0, 0, 0, 0.25),
-  0.125em 0.125em 0.20em rgba(0, 0, 0, 0.15);
-}
-
-.btn-primary:hover {
-  background-color: #216880;
-}
-
-.btn-primary:active {
-  transition: .3s;
-  transform: scale(1.1);
-}
 
 
 
@@ -462,5 +469,13 @@ body {
 }
 
 
+.footer-link {
+  transition: .35s ease;
+}
+.footer-link:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+}
 
 /* ///////////////////////////////////////////////// */
