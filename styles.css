@@ -46,6 +46,21 @@
   box-sizing: border-box;
 }
 
+
+ul,li,
+a, p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+
 body {
   margin: 0;
   padding: 0;
@@ -63,6 +78,7 @@ body {
 }
 
 .container {
+  width: 95%;
   max-width: 825px;
   margin: 0em auto;
   padding: 0 1.5em;
@@ -217,25 +233,32 @@ body {
 /* About Band Page */
 /* --------------- */
 .about-band-image {
-  float: left;
-  width: 275px;
-  height: 275px;
-  margin: 10px 15px 10px 15px;
+  /* float: left; */
+  margin: 0 auto 2em auto;
+  width: 375px;
+  /* margin: 10px 15px 10px 15px; */
   border-radius: 33%;
   box-shadow: 0.25em 0.25em 0.70em rgba(0, 0, 0, 0.25),
   0.125em 0.125em 0.20em rgba(0, 0, 0, 0.15);
 }
 
 
+.paragraph-flex {
+  display: flex;
+  gap: .75em;
+  margin-bottom: 2em;
+}
+
+
 .about__content--section {
-  height: 450px;
+  /* height: 450px; */
 }
 
 
 .band-description {
   font-weight: var(--fw-light);
   color:rgba(135, 26, 133, .7);
-  letter-spacing: .5px;
+  letter-spacing: 1px;
 }
 
 /* /////////////////////////////////////////////// */
@@ -457,11 +480,13 @@ body {
 .main-footer-container ul {
   flex-grow: 1;
   text-align: end;
+  transition: 0.3s;
 }
 
-.footer-nav li {
+/* .footer-nav li {
   padding: 0 .5em;
-}
+} */
+
 
 .footer-nav img {
   width: 50px;
@@ -479,3 +504,17 @@ body {
 }
 
 /* ///////////////////////////////////////////////// */
+
+@media (max-width: 510px) {
+  .main-footer-container ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+.paragraph-flex {
+  flex-direction: column;
+  gap: 1.7em;
+  }
+
+}
