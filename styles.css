@@ -1,0 +1,408 @@
+:root {
+  /* ----------- */
+  /* Font Weight */
+  /* ----------- */
+
+  --fw-exLight: 200;
+  --fw-light: 300;
+  --fw-reg: 400;
+  --fw-med: 500;
+  --fw-bold: 700;
+
+
+}
+
+@font-face {
+  font-family: "back to 1982";
+  src: url("back-to-1982.regular.ttf");
+}
+@font-face {
+  font-family: "future outrun future";
+  src: url("future.outrun-future.otf");
+  font-weight: lighter;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Raleway";
+  color: #871A85;
+}
+
+ body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  background-color: rgb(104, 77, 18);
+}
+
+.nav ul {
+  margin: 0;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav a {
+  display: inline-block;
+  padding: .5em;
+  color: #00FFFF;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: #871A85;
+  border: none;
+  border-radius: 25%;
+}
+
+.main-nav {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: lighter;
+  border-bottom: 1px solid rgba(0, 255, 255, .3);
+}
+
+.main-nav li {
+  padding: 0 5%;
+}
+
+.main-header {
+  background-color: rgba(0, 0, 0, .3);
+  background-image: url(images/gunship.header.png);
+  background-blend-mode: multiply;
+  background-size: cover;
+  padding-bottom: 30px;
+  box-shadow: .0.25em 0.25em 0.30em rgba(0, 0, 0, .25),
+  0.125em 0.125em 0.15em rgba(0, 0, 0, .15);
+  position: relative;
+}
+
+.band-name {
+  text-align: center;
+  font-size: 4em;
+  margin: 0;
+  font-family: "future outrun future";
+  font-weight: lighter;
+  color: #00FFFF;
+}
+
+.band-name-large {
+  font-size: 7em;
+  color: #FE18D3;
+}
+
+.content-section {
+  margin: 0;
+  background-color: #F1E7DA;
+  border: 2px solid #F1E7DA; 
+  box-shadow: .0.25em 0.25em 0.30em rgba(0, 0, 0, .25),
+  0.125em 0.125em 0.15em rgba(0, 0, 0, .15);
+}
+
+.about__content--section {
+  height: 450px;
+}
+
+.band-description {
+  font-weight: var(--fw-light);
+  color:rgba(135, 26, 133, .7);
+  letter-spacing: .5px;
+}
+
+
+.container {
+  max-width: 825px;
+  margin: 0em auto;
+  padding: 0 1.5em;
+}
+
+.section-header {
+  text-align: center;
+  font-family: "back to 1982";
+  font-weight: lighter;
+  color: #270245;
+  font-size: 2.5em;
+}
+
+.about-band-image {
+  float: left;
+  width: 275px;
+  height: 275px;
+  margin: 10px 15px 10px 15px;
+  border-radius: 33%;
+  box-shadow: 0.25em 0.25em 0.70em rgba(0, 0, 0, 0.25),
+  0.125em 0.125em 0.20em rgba(0, 0, 0, 0.15);
+}
+
+.main-footer {
+  background-color: #270245;
+  color: #FE18D3;
+  padding: .25em 0;
+  box-shadow: .0.20em 0.20em 0.50em rgba(0, 0, 0, .25),
+  0.125em 0.125em 0.20em rgba(0, 0, 0, .15);
+}
+
+.main-footer-container {
+  display: flex;
+  align-items: center;
+}
+
+.main-footer-container ul {
+  flex-grow: 1;
+  text-align: end;
+}
+
+.footer-nav li {
+  padding: 0 .5em;
+}
+
+.footer-nav img {
+  width: 50px;
+  height: 50px;
+}
+
+.grow {
+  transition: .25s ease;
+}
+.grow:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+}
+
+.btn {
+  text-align: center;
+  vertical-align: middle;
+  padding: .67em;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.btn-header {
+  margin: .5em 15% 2em 15%;
+  color: white;
+  border: 2px solid #2D9CD8;
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 0;
+  font-size: 1.5em;
+  font-weight: lighter;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.btn-header:hover {
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play {
+  display: block;
+  margin: 0 auto;
+  color: #FE18D3;
+  font-size: 4em;
+  border-radius: 50%;
+  padding: 0;
+  width: 100px;
+  height: 100px;
+  transition: .3s ease;
+}
+
+.btn-play:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+}
+
+
+
+.tour-row {
+  border-bottom: 1px solid black;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.tour-row:last-child {
+  border-bottom: none;
+}
+
+.tour-item {
+  display: inline-block;
+  padding-right: .5em;
+}
+
+.tour-date {
+  color: #270245;
+  font-weight: bold;
+  width: 11%;
+}
+
+.tour-city {
+  width: 24%;
+}
+
+.tour-arena {
+  width: 42%;
+}
+
+.tour-btn {
+  max-width: 19%;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #56CCF2;
+  border: none;
+  border-radius: .3em;
+  font-weight: bold;
+  box-shadow: 0.25em 0.25em 0.70em rgba(0, 0, 0, 0.25),
+  0.125em 0.125em 0.20em rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary:hover {
+  background-color: #216880;
+}
+
+.btn-primary:active {
+  transition: .3s;
+  transform: scale(1.1);
+}
+
+.shop-item {
+  margin: 30px;
+}
+
+.shop-item-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #333;
+  margin: 10px 5px 10px 5px;
+}
+
+.shop-item-image {
+  height: 250px;
+  box-shadow: 0.25em 0.25em 0.70em rgba(0, 0, 0, 0.25),
+  0.125em 0.125em 0.20em rgba(0, 0, 0, 0.15);
+}
+
+.shop-item-details {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.shop-item-price {
+  flex-grow: 1;
+  color: #333;
+}
+
+.shop-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cart-header {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: flex;
+}
+
+.cart-item {
+  width: 40%;
+}
+
+.cart-price {
+  width: 20%;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.cart-quantity {
+  width: 40%;
+}
+
+.cart-item-title {
+  color: #333;
+  margin-left: .3em;
+  font-size: 1.2em;
+}
+
+.cart-item-image {
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.btn-danger {
+  color: white;
+  background-color: #EB5757;
+  border: none;
+  border-radius: .3em;
+  font-weight: bold;
+}
+
+.btn-danger:hover {
+  background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #56CCF2;
+  background-color: #eee;
+  color: #333;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+
+.cart-row:last-child {
+  border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+  border: none;
+}
+
+.cart-total {
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  margin-right: 20px;
+}
+
+.cart-total-price {
+  color: #333;
+  font-size: 1.1em;
+}
+
+.btn-purchase {
+  display: block;
+  margin: 40px auto 80px auto;
+  font-size: 1.75em;
+  letter-spacing: 2px;
+}
