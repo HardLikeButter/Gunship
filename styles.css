@@ -67,6 +67,11 @@ body {
   font-family: 'Raleway', sans-serif;
   color: #871A85;
   background-color: rgb(104, 77, 18);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .content-section {
@@ -94,8 +99,9 @@ body {
 
 
 .btn {
+  display: block;
   text-align: center;
-  vertical-align: middle;
+  /* vertical-align: center; */
   padding: .67em;
   cursor: pointer;
   transition: 0.6s;
@@ -162,6 +168,7 @@ body {
 }
 
 .main-header {
+  width: 100%;
   background-color: rgba(0, 0, 0, .3);
   background-image: url(images/gunship.header.png);
   background-blend-mode: multiply;
@@ -174,7 +181,7 @@ body {
 
 .band-name {
   text-align: center;
-  font-size: 4em;
+  font-size: 4rem;
   margin: 0;
   font-family: "future outrun future";
   font-weight: lighter;
@@ -182,7 +189,7 @@ body {
 }
 
 .band-name-large {
-  font-size: 7em;
+  font-size: 7rem;
   color: #FE18D3;
 }
 
@@ -235,7 +242,7 @@ body {
 .about-band-image {
   /* float: left; */
   margin: 0 auto 2em auto;
-  width: 375px;
+  max-width: 375px;
   /* margin: 10px 15px 10px 15px; */
   border-radius: 33%;
   box-shadow: 0.25em 0.25em 0.70em rgba(0, 0, 0, 0.25),
@@ -250,9 +257,6 @@ body {
 }
 
 
-.about__content--section {
-  /* height: 450px; */
-}
 
 
 .band-description {
@@ -292,6 +296,7 @@ body {
   color: #270245;
   font-weight: bold;
   width: 11%;
+  border: 2px solid red;
 }
 
 .tour-city {
@@ -303,7 +308,8 @@ body {
 }
 
 .tour-btn {
-  max-width: 19%;
+
+  /* max-width: 19%; */
 }
 
 
@@ -465,6 +471,7 @@ body {
 /* ------ */
 
 .main-footer {
+  width: 100%;
   background-color: #270245;
   color: #FE18D3;
   padding: .25em 0;
@@ -483,11 +490,6 @@ body {
   transition: 0.3s;
 }
 
-/* .footer-nav li {
-  padding: 0 .5em;
-} */
-
-
 .footer-nav img {
   width: 50px;
   height: 50px;
@@ -505,16 +507,64 @@ body {
 
 /* ///////////////////////////////////////////////// */
 
-@media (max-width: 510px) {
+@media (max-width: 590px) {
+  .tour-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2em;
+    text-align: center;
+
+    /* padding: 1em 0; */
+    /* font-size: 1.2rem; */
+  }
+
+ 
+  .tour-date,
+  .tour-city,
+  .tour-arena,
+  .tour-btn {
+    width: auto;
+  }
+
+}
+
+
+
+@media (max-width: 515px) {
+  .band-name {
+    font-size: 2.8rem;
+  }
+  
+  .band-name-large {
+    font-size: 3.8rem;
+  }
+
+  
+  
+  .paragraph-flex {
+    flex-direction: column;
+    gap: 1.7em;
+  }
+  
+  
+  
   .main-footer-container ul {
     display: flex;
     flex-direction: column;
   }
+}
 
 
-.paragraph-flex {
-  flex-direction: column;
-  gap: 1.7em;
+@media (max-width: 320px) {
+  .main-footer-container {
+    display: flex;
+    flex-direction: column;
   }
 
+  .main-footer-container ul {
+    flex-direction: row;
+    
+  } 
 }
