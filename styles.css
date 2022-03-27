@@ -296,7 +296,6 @@ body {
   color: #270245;
   font-weight: bold;
   width: 11%;
-  border: 2px solid red;
 }
 
 .tour-city {
@@ -307,10 +306,7 @@ body {
   width: 42%;
 }
 
-.tour-btn {
 
-  /* max-width: 19%; */
-}
 
 
 
@@ -338,7 +334,7 @@ body {
 }
 
 .shop-item-image {
-  height: 250px;
+  width: 100%;
   box-shadow: 0.25em 0.25em 0.70em rgba(0, 0, 0, 0.25),
   0.125em 0.125em 0.20em rgba(0, 0, 0, 0.15);
 }
@@ -366,6 +362,11 @@ body {
   color: #333;
 }
 
+
+.cart-row {
+  display: flex;
+}
+
 .cart-column {
   display: flex;
   align-items: center;
@@ -375,9 +376,6 @@ body {
   margin-top: 10px;
 }
 
-.cart-row {
-  display: flex;
-}
 
 .cart-item {
   width: 40%;
@@ -507,6 +505,9 @@ body {
 
 /* ///////////////////////////////////////////////// */
 
+
+
+
 @media (max-width: 590px) {
   .tour-row {
     display: flex;
@@ -516,8 +517,6 @@ body {
     gap: 1.2em;
     text-align: center;
 
-    /* padding: 1em 0; */
-    /* font-size: 1.2rem; */
   }
 
  
@@ -526,6 +525,14 @@ body {
   .tour-arena,
   .tour-btn {
     width: auto;
+  }
+
+
+  .cart-column {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
   }
 
 }
@@ -547,7 +554,9 @@ body {
     flex-direction: column;
     gap: 1.7em;
   }
-  
+
+
+
   
   
   .main-footer-container ul {
@@ -557,7 +566,67 @@ body {
 }
 
 
+
+@media (max-width: 450px) {
+  .cart-row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+  }
+
+  
+  
+  .cart-header {
+    display: none;
+  }
+  
+  
+  .cart-column {
+    border-bottom: none;
+  }
+
+  
+  .cart-item-image {
+    margin-top: .5em;
+  }
+
+
+  
+  .cart-item-title {
+    margin-top: 1em;
+    border-bottom: 2px solid black;
+    /* border: 2px solid red; */
+    padding: 1em 1.6em;
+    text-align: center;
+  }
+  
+  .btn-danger {
+    margin-bottom: 1em;
+  }
+
+
+  .line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, .5);
+    margin: 1em auto;
+  }
+
+}
+
+
 @media (max-width: 320px) {
+  .shop-item-details {
+    margin-top: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+
+  }
+
+
   .main-footer-container {
     display: flex;
     flex-direction: column;
